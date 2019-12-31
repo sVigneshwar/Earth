@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title</title>
+  </head>
+  <link rel="stylesheet" type="text/css" href="css/custom.css" />
+  <body>
+    <section class="earth-section">
+      <div id="particles-div"></div>
+      <div class="moon">
+      	<div class="moon-inner"></div>
+      </div>
+      <div class="earth"></div>
+      <div class="sun"></div>
+    </section>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+      $(document).ready(function() {
+        particlesJS.load("particles-div", "particlesjs-config.json");
+      });
+    </script>
+  </body>
+</html>
