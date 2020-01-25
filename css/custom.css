@@ -1,15 +1,15 @@
 *{ box-sizing: border-box; }
 body{ padding: 0; margin: 0; font-family: arial; overflow-x: hidden; }
 .earth-section{ position: relative; height: 100vh; background-image: url(../img/space.jpg); background-repeat: no-repeat; background-size: cover; background-position: center}
-.earth{ position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(2deg); background-image: url(../img/map3.jpg); background-size: cover; border-radius: 50%; width: 500px; height: 500px; animation: spin 35s linear alternate infinite; box-shadow: inset 10px 14px 20px rgba(255, 255, 255, 0.81);}
+.earth{ position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(2deg); background-image: url(../img/map3.jpg); background-size: cover; border-radius: 50%; width: 500px; height: 500px; animation: spin 700s linear alternate infinite; box-shadow: inset 10px 14px 20px rgba(255, 255, 255, 0.81);}
 #particles-div {position: absolute; background: rgba(0,0,0,0.8); top: 0; left: 0; right: 0; bottom: 0; }
 .sun {position: absolute; height: 300px; width: 300px; top: -120px; left: -120px; background-image: url(../img/sun.jpg); background-repeat: no-repeat; background-position: center; background-size: cover; box-shadow: inset 0px 0px 24px 20px rgba(0,0,0,1); border-radius: 50%; animation: sun 180s linear infinite forwards; }
 .moon{ position: absolute; animation: rotation 50s infinite linear; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1;}
-.moon-inner{  height: 200px; width: 200px; background-image: url(../img/moon.jpg); background-size: cover; animation: spin 40s linear alternate infinite; border-radius: 50%; position: relative;}
+.moon-inner{  height: 200px; width: 200px; background-image: url(../img/moon.jpg); background-size: cover; animation: spin 1000s linear alternate infinite; border-radius: 50%; position: relative;}
 .moon-inner:before{ content: ''; display: block; height: 100%; width: 100%; border-radius: 50%; box-shadow: inset 10px 14px 20px rgba(255, 255, 255, 0.81); animation: shadow 60s linear alternate infinite;}
 
 @keyframes spin{
-	100%{ background-position: 100%; }
+	100%{ background-position: -10000px; }
 }
 
 @keyframes rotation{
